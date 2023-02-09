@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="main.css">
+  <script src="bundle.js" async></script>
+</head>
+
+<body>
+  <div data-controller="hello">
+    <input data-hello-target="name" type="text">
+    <button data-action="click->hello#greet">Greet</button>
+  </div>
+
+  <div data-controller="clipboard">
+    PIN: <input data-clipboard-target="source" type="text" value="1234" readonly>
+    <button data-action="click->clipboard#copy">Copy to Clipboard</button>
+  </div>
+
+  <hr />
+
+  <div data-controller="slideshow">
+    <button data-action="slideshow#previous"> ← </button>
+    <button data-action="slideshow#next"> → </button>
+
+    <div data-slideshow-target="slide">🐵</div>
+    <div data-slideshow-target="slide">🙈</div>
+    <div data-slideshow-target="slide">🙉</div>
+    <div data-slideshow-target="slide">🙊</div>
+  </div>
+
+  <hr />
+
+  <div data-controller="tabs">
+    <button id="one" data-tabs-target="btn" data-action="click->tabs#select">OnlineTours</button>
+    <button id="two" data-tabs-target="btn" data-action="click->tabs#select">TopHotels</button>
+    <div data-tabs-target="tab" id="one">
+      OnlineTours content
+    </div>
+    <div data-tabs-target="tab" id="two">
+      TopHotels content
+      <div id="th_rates_ver_8_6f8561e0ae8e19d575ed54ea850b4056"></div>
+    </div>
+
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+
+.active {
+  outline: 2px solid red;
+}
