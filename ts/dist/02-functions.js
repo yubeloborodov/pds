@@ -2,16 +2,16 @@
 function sum(a, b) {
     return a + b;
 }
-sum(1, 2);
-const sum2 = (a, b) => a + b;
+sum(2, 5);
 function log(name, userId) {
-    console.log("Hello", name, "with Id", userId || "");
+    console.log('Hello', name);
 }
-log("Andrew");
+console.log('Yury', 213);
 function crash() {
-    throw new Error("crash");
+    throw new Error('crash');
 }
 function average(...nums) {
-    const s = nums.reduce((cur, total) => cur + total, 0);
-    return s / nums.length;
+    const sum = nums.reduce((current, total) => current + total, 0);
+    return sum / nums.length;
 }
+const sum2 = (a, b) => a + b;

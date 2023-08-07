@@ -1,21 +1,23 @@
-function sum(a: number, b: number): number {
+function sum(a: number, b: number) {
   return a + b;
 }
-sum(1, 2);
 
-const sum2 = (a: number, b: number): number => a + b;
+sum(2, 5);
 
-function log(name: string, userId?: string): void {
-  console.log("Hello", name, "with Id", userId || "");
+function log(name: string, userId?: string):void {
+  console.log('Hello', name);
 }
 
-log("Andrew");
+console.log('Yury', 213);
 
-function crash(): never {
-  throw new Error("crash");
+
+function crash():never {
+  throw new Error('crash')
 }
 
-function average(...nums: number[]): number {
-  const s = nums.reduce((cur, total) => cur + total, 0);
-  return s / nums.length;
+function average(...nums: number[]) {
+  const sum = nums.reduce((current, total) => current + total, 0)
+  return sum / nums.length;
 }
+
+const sum2 = (a:number, b:number) => a + b;
